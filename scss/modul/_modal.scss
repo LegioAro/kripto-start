@@ -1,0 +1,129 @@
+.modal {
+  width: 100%;
+  max-width: 406px;
+  min-height: 458px;
+  background: #ffffff;
+  box-shadow: 0px 2.08205px 52.0513px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  position: relative;
+  height: fit-content;
+  padding: 60px 42px 47px;
+  color: #000;
+
+  &__wrapper {
+    justify-content: center;
+    padding: 200px 10px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    display: none;
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    width: 176px;
+    left: 50%;
+    top: -150px;
+    transform: translateX(-50%);
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 18.2017px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+
+  &__text {
+    font-size: 10.3221px;
+    line-height: 135%;
+    text-align: center;
+    margin-bottom: 38px;
+  }
+
+  &__input-block {
+    margin-bottom: 38px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 12.5px 10px;
+    margin-bottom: 17.5px;
+    outline: none;
+    transition: 0.3s;
+    background: #ffffff;
+    border: 0.520513px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5.20513px;
+    &::placeholder {
+      font-size: 10.4103px;
+      line-height: 145%;
+      color: #000;
+    }
+    &:focus {
+      border: 0.74359px solid rgba(0, 0, 0, 0.3);
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  &__close-btn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 38px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: #000;
+      left: 0;
+      transform-origin: left;
+    }
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+    &::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .btn {
+    background: linear-gradient(97.87deg, #f1a23d 43.93%, #ef7831 102.89%);
+    border-radius: 7px;
+    width: 100%;
+    outline: none;
+    border: 0;
+    padding: 17px 0;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .modal {
+    padding: 60px 20px 47px;
+  }
+}

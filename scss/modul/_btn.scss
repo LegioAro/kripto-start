@@ -1,0 +1,77 @@
+.btn {
+  background-image: linear-gradient(97.87deg, #449eeb 43.93%, #317ac7 102.89%);
+  border-radius: 12.6667px;
+  padding: 27px 40px;
+  width: fit-content;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: 0.3s;
+  &:hover {
+    background-image: linear-gradient(97.87deg, #f1a23d 43.93%, #ef7831 102.89%);
+    &::before {
+      top: calc(100% - 25px);
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 72px;
+    pointer-events: none;
+    top: calc(100% - 15px);
+    right: 0;
+    background-image: url(../img/btn/click.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: 0.3s;
+  }
+  &__wrapper {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    pointer-events: none;
+
+    bottom: calc(100% - 35px);
+    z-index: 1;
+  }
+
+  &__decor {
+    position: absolute;
+    width: 600px;
+    left: 50%;
+    bottom: -240px;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .btn {
+    &__decor {
+      width: 400px;
+      bottom: -105px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .btn {
+    font-size: 16px;
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .btn {
+    padding: 20px 20px;
+  }
+}

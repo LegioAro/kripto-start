@@ -1,0 +1,33 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background-color: #161616;
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.page {
+  overflow: hidden;
+  position: relative;
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1920px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+  &__big {
+    width: 100%;
+    max-width: 1350px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
