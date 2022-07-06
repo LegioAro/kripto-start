@@ -40,18 +40,15 @@ $(
         processData: false,
         contentType: false,
         beforeSend: function () {
-          if (fd.get('honeypot').length) {
-            return false;
-          } else {
-            fd.delete('honeypot');
-          }
-
+          //   if (fd.get('honeypot').length) {
+          //     return false;
+          //   } else {
+          //     fd.delete('honeypot');
+          //   }
           //   // Показываем прелоадер
           //   preloader.css('opacity', '1');
-
           //   // Делаем неактивной кнопку отправки
           //   submitButton.prop('disabled', true);
-
           // валидация других полей.
         },
       }).done(function (res, textStatus, jqXHR) {
