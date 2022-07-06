@@ -492,7 +492,7 @@
       </footer>
 
       <div class="modal__wrapper" data-modal-window="form">
-        <form action="" class="modal">
+        <form action="" class="modal" id="form">
           <div class="modal__close"><div class="modal__close-btn"></div></div>
 
           <div class="modal__img"><img src="img/modal/box.png" alt="" /></div>
@@ -501,11 +501,18 @@
             Чтобы получить доступ к закрытому каналу, где будет проходить курс и забрать ПОДАРОК 🎁
           </div>
           <div class="modal__input-block">
-            <input type="text" required name="" value="" placeholder="Имя" class="modal__input" />
+            <input
+              type="text"
+              required
+              name="Имя"
+              value=""
+              placeholder="Имя"
+              class="modal__input"
+            />
             <input
               type="email"
               required
-              name=""
+              name="Email"
               value=""
               placeholder="Email"
               class="modal__input"
@@ -513,7 +520,7 @@
             <input
               type="number"
               required
-              name=""
+              name="Телефон"
               value=""
               placeholder="Телефон"
               class="modal__input"
@@ -528,6 +535,8 @@
       </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/form.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
