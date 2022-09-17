@@ -1,0 +1,12 @@
+.scroll-hidden {
+  opacity: 0;
+  transform: translateX(-100px);
+  &.scroll-hidden-right {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  &.scroll-hidden-bottom {
+    opacity: 0;
+    transform: translateY(100px) translateX(0);
+  }
+}

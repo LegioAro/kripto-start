@@ -29,6 +29,7 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     margin-bottom: 5px;
+    transition: 0.3s;
   }
 
   &__info-title {
@@ -37,6 +38,7 @@
     line-height: 110%;
     text-transform: uppercase;
     margin-bottom: 25px;
+    transition: 0.3s;
     span {
       font-size: 67.4859px;
       background: linear-gradient(97.87deg, #f1a23d 43.93%, #ef7831 102.89%);
@@ -57,6 +59,7 @@
     align-items: center;
     width: 100%;
     max-width: 500px;
+    transition: 0.3s;
     &:last-child {
       margin-bottom: 0;
     }

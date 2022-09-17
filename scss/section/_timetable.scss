@@ -12,6 +12,7 @@
   &__title-block {
     width: 100%;
     max-width: 680px;
+    transition: 0.3s;
   }
 
   &__title {
@@ -35,6 +36,7 @@
   }
 
   &__img {
+    transition: 0.3s;
     margin-top: -115px;
   }
 
@@ -46,6 +48,7 @@
   &__item {
     display: flex;
     align-items: flex-start;
+    transition: 0.3s;
     margin-bottom: 60px;
     &:last-child {
       margin-bottom: 0;
@@ -76,21 +79,16 @@
   }
 
   &__item-title {
-    font-family: 'Raleway', sans-serif;
     font-family: 'Open Sans', sans-serif;
-
     font-weight: 900;
     font-size: 40px;
     line-height: 115%;
     text-transform: uppercase;
     margin-bottom: 5px;
-    // background: linear-gradient(97.87deg, #f1a23d 43.93%, #ef7831 102.89%);
-    // -webkit-background-clip: text;
-    // -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #f1a23d;
     background-clip: text;
     color: #17181d;
-    // text-fill-color: transparent;
+    color: rgba(#17181d, 0.5);
     width: fit-content;
     position: relative;
   }

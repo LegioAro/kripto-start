@@ -89,6 +89,24 @@ function isTimer() {
   let timerId = setInterval(countdownTimer, 85);
 }
 
+function isAnimationScroll() {
+  function onEntry(entry) {
+    entry.forEach((change) => {
+      if (change.isIntersecting) {
+        change.target.classList.remove('scroll-hidden');
+        change.target.classList.remove('scroll-hidden-right');
+      }
+    });
+  }
+  let options = { threshold: [0.5] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.scroll-hidden');
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
+}
+
+isAnimationScroll();
 isModal();
 isModalClose();
 isTimer();

@@ -40,7 +40,7 @@
   &__img {
     position: absolute;
     pointer-events: none;
-
+    transition: 0.3s;
     bottom: calc(100% - 35px);
     z-index: 1;
   }
