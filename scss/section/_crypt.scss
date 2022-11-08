@@ -1,5 +1,5 @@
 .crypt {
-  padding-top: 90px;
+  padding-top: 72px;
   position: relative;
   z-index: 1;
   &__wrapper {
@@ -22,11 +22,11 @@
   }
 
   &__info-subtitle {
-    max-width: 305px;
+    max-width: 405px;
     font-weight: 500;
     font-size: 20px;
     line-height: 145%;
-    margin: -32px 0 45px auto;
+    margin: 40px 0;
     transition: 0.3s;
   }
 

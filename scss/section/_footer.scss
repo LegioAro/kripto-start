@@ -20,6 +20,8 @@
   &__info {
     width: 100%;
     max-width: 555px;
+    position: relative;
+    z-index: 1;
   }
 
   &__info-subtitle {

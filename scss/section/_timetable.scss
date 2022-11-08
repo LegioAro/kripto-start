@@ -37,7 +37,7 @@
 
   &__img {
     transition: 0.3s;
-    margin-top: -115px;
+    // margin-top: -115px;
   }
 
   &__items {
@@ -62,7 +62,7 @@
         height: 955px;
         top: 15px;
         left: 17px;
-        background-image: linear-gradient(180deg, #ffffff 0%, #17181d 94.44%);
+        background-image: linear-gradient(180deg, #ffffff 0%, rgba(0, 0, 0, 0) 94.44%);
       }
     }
   }
@@ -127,6 +127,20 @@
   }
 }
 
+// @media (max-width: 1450px) {
+//   .timetable {
+//     &__item {
+//       &:first-child {
+//         &::before {
+//           // background-image: url();
+//           // background-image: linear-gradient(180deg, #ffffff 0%, #17181d 100%);
+//           // background-color: #fff;
+//         }
+//       }
+//     }
+//   }
+// }
+
 @media (max-width: 1150px) {
   .timetable {
     &__title-block {
@@ -154,6 +168,13 @@
     &__items {
       max-width: 500px;
     }
+    &__item {
+      &:first-child {
+        &::before {
+          height: 910px;
+        }
+      }
+    }
   }
 }
 
@@ -179,7 +200,7 @@
       font-size: 35px;
     }
     &__img {
-      margin-top: -85px;
+      // margin-top: -85px;
     }
   }
 }
@@ -189,6 +210,25 @@
     &__item-title {
       font-size: 30px;
     }
+    &__item {
+      &:first-child {
+        &::before {
+          height: 860px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .timetable {
+    &__item {
+      &:first-child {
+        &::before {
+          height: 930px;
+        }
+      }
+    }
   }
 }
 
@@ -197,6 +237,42 @@
     &__title {
       font-size: 32px;
       transform: translateX(0px);
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .timetable {
+    &__item {
+      &:first-child {
+        &::before {
+          height: 950px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .timetable {
+    &__item {
+      &:first-child {
+        &::before {
+          height: 1020px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .timetable {
+    &__item {
+      &:first-child {
+        &::before {
+          height: 1080px;
+        }
+      }
     }
   }
 }

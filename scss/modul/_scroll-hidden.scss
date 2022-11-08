@@ -1,12 +1,12 @@
 .scroll-hidden {
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateX(-150px);
   &.scroll-hidden-right {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(150px);
   }
   &.scroll-hidden-bottom {
     opacity: 0;
-    transform: translateY(100px) translateX(0);
+    transform: translateY(150px) translateX(0);
   }
 }

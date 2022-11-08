@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 130px 45px;
+    margin: -65px -22.5px;
   }
 
   &__item {
@@ -28,6 +28,7 @@
     position: relative;
     padding: 0 35px 45px;
     transition: 0.3s;
+    margin: 65px 22.5px;
     &::before {
       content: '';
       position: absolute;
@@ -49,8 +50,8 @@
   }
 
   &__item-img {
-    width: 177px;
-    height: 177px;
+    width: 140px;
+    height: 140px;
     position: relative;
     z-index: 1;
     margin: -93px auto 0;

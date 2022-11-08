@@ -29,9 +29,9 @@
 
   &__img {
     position: absolute;
-    width: 176px;
+    width: 120px;
     left: 50%;
-    top: -150px;
+    top: -100px;
     transform: translateX(-50%);
   }
 
@@ -109,6 +109,60 @@
     }
   }
 
+  &__checkbox-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    input {
+      display: none;
+      &:checked + label {
+        &::before {
+          display: block;
+        }
+      }
+    }
+
+    label {
+      width: 100%;
+      max-width: 20px;
+      height: 20px;
+      border-radius: 3px;
+      margin-right: 15px;
+      border: 1px solid #f1a23d;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #f1a23d;
+        display: none;
+      }
+    }
+  }
+
+  &__checkbox-text {
+    font-size: 13px;
+  }
+
+  &__privacy {
+    font-size: 14px;
+    color: #449eeb;
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  #honeypot {
+    transform: scale(0);
+  }
+
   .btn {
     background: linear-gradient(97.87deg, #f1a23d 43.93%, #ef7831 102.89%);
     border-radius: 7px;
@@ -116,8 +170,13 @@
     outline: none;
     border: 0;
     padding: 17px 0;
+    margin-bottom: 20px;
     &::before {
       display: none;
+    }
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
     }
   }
 }
