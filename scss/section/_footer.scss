@@ -19,7 +19,7 @@
 
   &__info {
     width: 100%;
-    max-width: 555px;
+    max-width: 570px;
     position: relative;
     z-index: 1;
   }
@@ -53,6 +53,14 @@
   }
 
   &__info-items {
+  }
+
+  &__info-items-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 75px;
   }
 
   &__info-item {
@@ -129,6 +137,9 @@
 
 @media (max-width: 920px) {
   .footer {
+    &__info-items-title {
+      margin-left: 0;
+    }
     &__info-block {
       flex-direction: column;
     }

@@ -295,6 +295,12 @@
     }
   }
 
+  &__btn-info {
+    margin-top: 10px;
+    font-weight: 700;
+    color: #e40f0f;
+  }
+
   .btn {
     width: 100%;
     max-width: 340px;
@@ -355,12 +361,15 @@
 
 @media (max-width: 950px) {
   .description {
+    &__mob {
+      margin-bottom: 50px;
+    }
     &__info {
       flex-direction: column;
       margin-bottom: 80px;
     }
     &__info-text-block {
-      margin: 0 auto 80px;
+      margin: 0 auto;
       text-align: center;
       max-width: 700px;
       br {

@@ -118,7 +118,23 @@ function isAnimationScroll() {
   }
 }
 
+function isMoveDescriptionItems() {
+  const descItems = document.querySelector('.description__info-items');
+  const blockDescDesctop = document.querySelector('.description__info');
+  const blockDescmob = document.querySelector('.description__mob');
+
+  console.log(descItems, blockDescDesctop, blockDescmob);
+  if (descItems && blockDescDesctop && blockDescmob && window.innerWidth > 950) {
+    blockDescDesctop.append(descItems);
+  } else if (descItems && blockDescDesctop && blockDescmob && window.innerWidth <= 950) {
+    blockDescmob.append(descItems);
+  }
+}
+isMoveDescriptionItems();
+
 isAnimationScroll();
 isModal();
 isModalClose();
 isTimer();
+
+window.addEventListener('resize', isMoveDescriptionItems);
